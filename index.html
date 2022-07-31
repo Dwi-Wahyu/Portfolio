@@ -11,18 +11,42 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Dwi Wahyu</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="shortcut icon"
-      href="img/15_DwiWahyu_Tugas13A.jpg"
-      type="image/x-icon"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet"
     />
   </head>
 
-  <body id="#home">
+  <body>
     <div class="navigasi" style="padding-bottom: 0px">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top navigasi"
+      >
         <div class="container">
-          <a class="navbar-brand fs-3" href="#">Wahil</a>
+          <a class="logo" href="#home">Wahil</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -37,22 +61,23 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item ms-3">
-                <a class="nav-link fs-5" aria-current="page" href="#home"
-                  >Home</a
+                <a class="nav-link fs-5 linkNavigasi" href="#AboutMe"
+                  >About Me</a
                 >
               </li>
               <li class="nav-item ms-3">
-                <a class="nav-link fs-5" href="#AboutMe">About Me</a>
+                <a class="nav-link fs-5 linkNavigasi" href="#project"
+                  >Project</a
+                >
               </li>
               <li class="nav-item ms-3">
-                <a class="nav-link fs-5" href="#project">Project</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link fs-5" href="#ContactMe">Contact Me</a>
+                <a class="nav-link fs-5 linkNavigasi" href="#ContactMe"
+                  >Contact Me</a
+                >
               </li>
               <li class="nav-item ms-3 dropdown">
                 <a
-                  class="nav-link fs-5 dropdown-toggle"
+                  class="nav-link fs-5 dropdown-toggle linkNavigasi"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -67,7 +92,7 @@
                 >
                   <li>
                     <a
-                      class="dropdown-item fs-5"
+                      class="dropdown-item fs-5 linkNavigasi"
                       href="https://www.facebook.com/profile.php?id=100071128946013"
                       target="_blank"
                       >Facebook</a
@@ -75,7 +100,7 @@
                   </li>
                   <li>
                     <a
-                      class="dropdown-item fs-5"
+                      class="dropdown-item fs-5 linkNavigasi"
                       href="https://www.instagram.com/wahil._/"
                       target="_blank"
                       >Instagram</a
@@ -93,11 +118,10 @@
       <img
         src="img/mukalast.jpg"
         alt="dwi"
-        style="width: 200px"
         class="rounded-circle img-thumbnail"
       />
-      <h1 class="display-5" style="font-weight: 400" id="#home">Dwi Wahyu</h1>
-      <p class="lead" style="margin-bottom: 0">Junior Web Developer.</p>
+      <h1 class="display-5" id="#home">Dwi Wahyu</h1>
+      <p class="lead">Junior Web Developer.</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -115,12 +139,12 @@
       <div class="container" style="margin-bottom: 55px">
         <div class="row mb-3">
           <div class="col">
-            <h2>About Me</h2>
+            <h2 class="Headers-About">About Me</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md">
-            <p style="margin-bottom: 0" class="fs-5">
+            <p class="teks-about">
               Seorang pelajar berumur 16 tahun asal SMKN 5 Makassar jurusan
               Teknik Komputer dan Jaringan, yang saat ini tertarik dengan dunia
               website programming, dan software development.
@@ -145,9 +169,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 style="text-align: center; padding-bottom: 10px">
-              My Projects
-            </h2>
+            <h2 class="Headers-projects">My Projects</h2>
           </div>
         </div>
         <div class="row justify-content-center" style="padding-bottom: 20px">
@@ -229,22 +251,26 @@
     </div>
 
     <div class="container">
-      <h2 style="text-align: center; padding-bottom: 35px">Contact Me</h2>
+      <h2 class="Headers-contact">Contact Me</h2>
 
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <form onsubmit="myFunction(); reset(); return false;">
-            <label for="name" class="col-sm-2 col-form-label"
+          <form>
+            <label for="name" class="col-sm-2 col-form-label contact-text"
               >Nama Lengkap</label
             >
             <div>
               <input type="text" class="form-control" id="name" />
             </div>
-            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <label for="email" class="col-sm-2 col-form-label contact-text"
+              >Email</label
+            >
             <div>
               <input type="email" class="form-control" id="email" />
             </div>
-            <label class="col-sm-2 col-form-label" for="textAreaExample"
+            <label
+              class="col-sm-2 col-form-label contact-text"
+              for="textAreaExample"
               >Message</label
             >
             <div class="form-outline">
@@ -267,22 +293,6 @@
         </div>
       </div>
     </div>
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script>
-      function myFunction() {
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "dwiwahyuilahi123@gmail.com",
-          Password: "DeadlyMamba89",
-          To: "kontolxadakah@gmail.com",
-          From: "dwiwahyuilahi123@gmail.com",
-          Subject: "Halo",
-          Body: "Sundala",
-        }).then((message) => alert(message));
-      }
-    </script>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path

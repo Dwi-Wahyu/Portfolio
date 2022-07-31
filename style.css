@@ -1,14 +1,18 @@
 .jumbotron {
-  padding-top: 6rem;
+  padding-top: 8rem;
   padding-bottom: 0px;
   padding-bottom: 0;
   background-color: rgb(215, 215, 248);
   text-align: center;
 }
 
+.jumbotron img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
 html {
   background-color: #fff;
-  /* min-height: 5000px; */
 }
 
 .AboutMe {
@@ -23,4 +27,71 @@ html {
 .card-text {
   color: black;
   text-decoration: none;
+}
+
+.lead {
+  margin-bottom: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.teks-about {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
+}
+
+.contact-text {
+  font-family: "Overpass", sans-serif;
+}
+
+.Headers-About,
+.Headers-projects,
+.Headers-contact {
+  font-family: "Kanit", sans-serif;
+}
+
+.Headers-projects {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.Headers-contact {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+#home {
+  font-family: "DM Sans", sans-serif;
+}
+
+.logo {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.linkNavigasi {
+  font-family: "Exo 2", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 0px;
+    padding-bottom: 0;
+    background-color: rgb(215, 215, 248);
+    text-align: center;
+  }
+  .jumbotron img {
+    width: 200px;
+  }
+  .teks-about {
+    font-size: 17px;
+  }
 }
