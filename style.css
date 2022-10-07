@@ -76,6 +76,10 @@ html {
   color: white;
 }
 
+.wrapper-project {
+  text-decoration: none;
+}
+
 .linkNavigasi {
   font-family: "Exo 2", sans-serif;
 }
