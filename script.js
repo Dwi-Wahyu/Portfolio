@@ -5,7 +5,7 @@ form.addEventListener("submit", async () => {
   const message = document.getElementById("textAreaExample1").value;
   const data = { nama, email, message };
   //   console.log(nama, email, message);
-  fetch("http://wahil-api.vercel.app/v1/ContactMe/post/", {
+  fetch("https://wahil-api.vercel.app/v1/ContactMe/post/", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
