@@ -17,6 +17,12 @@ form.addEventListener("submit", async () => {
     .then((message) => {
       if (message.Success == "Post data success!") {
         SuccessAlert.classList.remove("d-none");
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("textAreaExample1").value = "";
+        window.setTimeout(() => {
+          SuccessAlert.classList.add("d-none");
+        }, 10000);
       }
     });
 });
