@@ -261,6 +261,24 @@
     <div class="container">
       <h2 class="Headers-contact">Contact Me</h2>
 
+      <div class="d-none row justify-content-center" id="SuccessAlert">
+        <div
+          class="alert alert-success d-flex align-items-center col-md-8"
+          role="alert"
+        >
+          <svg
+            class="bi flex-shrink-0 me-2"
+            width="24"
+            height="24"
+            role="img"
+            aria-label="Success:"
+          >
+            <use xlink:href="#check-circle-fill" />
+          </svg>
+          <div>Berhasil mengirimkan pesan</div>
+        </div>
+      </div>
+
       <div class="row justify-content-center">
         <div class="col-md-8">
           <form onsubmit="return false" id="form">
@@ -302,7 +320,14 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+        />
+      </symbol>
+    </svg>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="rgb(215, 215, 248)"
@@ -310,6 +335,9 @@
         d="M0,128L48,128C96,128,192,128,288,149.3C384,171,480,213,576,202.7C672,192,768,128,864,101.3C960,75,1056,85,1152,112C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
       ></path>
     </svg>
+
+    <script src="script.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
